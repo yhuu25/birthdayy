@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#dff3df">
+  <meta name="description" content="A little birthday surprise, made with love.">
+  <title>Happy Birthday, My Baby!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Back to top">
+      <span class="brand-mark">♥</span>
+      <span>FOR MY BABY</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#memories">Memories</a>
+      <a href="#reasons">Why You</a>
+      <a href="#letter">My Letter</a>
+    </nav>
+    <button class="sound-button" id="soundButton" type="button" aria-label="Play birthday melody" aria-pressed="false">
+      <span class="sound-icon">♫</span>
+      <span class="sound-label">Play song</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="confetti-strip strip-one"></div>
+      <div class="confetti-strip strip-two"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Today is your special day</p>
+        <h1>Happy Birthday,<br><em data-girlfriend-name>My Baby</em><span class="sparkle">✦</span></h1>
+        <p class="hero-message">To the girl who turns ordinary days into my favorite memories—this little world is just for you.</p>
+        <div class="hero-actions">
+          <button class="primary-button" id="celebrateButton" type="button">
+            Open for surprise :)<span>↗</span>
+          </button>
+          <a class="text-link" href="#memories">Take a little tour <span>↓</span></a>
+        </div>
+        <div class="mini-note">
+        </div>
+      </div>
+
+      <div class="hero-art reveal" aria-label="A birthday cake surrounded by balloons">
+        <div class="sun-shape"></div>
+        <div class="balloon balloon-one"><span></span></div>
+        <div class="balloon balloon-two"><span></span></div>
+        <div class="balloon balloon-three"><span></span></div>
+        <div class="orbit orbit-one"><i>♥</i></div>
+        <div class="orbit orbit-two"><i>✦</i></div>
+        <div class="birthday-card">
+          <div class="card-tape"></div>
+          <p>MY FAVORITE PERSON</p>
+          <div class="portrait-placeholder">
+  <img src="pic-1.jpg" alt="Photo of my girlfriend">
+</div>
+          <strong data-birthday-label>Your special day</strong>
+        </div>
+        <div class="cake" aria-hidden="true">
+          <div class="flame"></div>
+          <div class="candle"></div>
+          <div class="icing"></div>
+          <div class="cake-body"><span>HAPPY<br>BIRTHDAY</span></div>
+          <div class="cake-plate"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="love-ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>YOU MAKE LIFE SWEETER ✦</span><span>MY FAVORITE PERSON ♥</span><span>HERE'S TO YOU ✦</span><span>LOVED BEYOND WORDS ♥</span>
+        <span>YOU MAKE LIFE SWEETER ✦</span><span>MY FAVORITE PERSON ♥</span><span>HERE'S TO YOU ✦</span><span>LOVED BEYOND WORDS ♥</span>
+      </div>
+    </div>
+
+    <section class="section memories" id="memories">
+
+  <div class="section-heading">
+    <p class="eyebrow">
+      <span></span>
+      Our little memories together
+    </p>
+
+    <h2>
+      Moments I<br>
+      <em>enjoyed so much with you.</em>
+    </h2>
+  </div>
+
+  <div class="memory-grid">
+
+    <article class="memory-card">
+      <img src="pic-2.jpg" alt="Our first special memory">
+    </article>
+
+    <article class="memory-card">
+      <img src="pic-3.jpg" alt="Our favorite date">
+    </article>
+
+    <article class="memory-card">
+      <img src="pic-4.jpg" alt="Our favorite memory">
+    </article>
+
+  </div>
+
+</section>
+</section>
+
+    <section class="section reasons" id="reasons">
+      <div class="reason-visual reveal" aria-hidden="true">
+        <div class="flower flower-one">✿</div>
+        <div class="flower flower-two">✿</div>
+        <div class="reason-card-stack back-card"></div>
+        <div class="reason-card-stack middle-card"></div>
+        <div class="reason-card-main">
+          <span class="big-heart">♥</span>
+          <p id="reasonNumber">Reason no. 01</p>
+          <strong id="reasonText">You make every room feel warmer just by being in it.</strong>
+        </div>
+      </div>
+      <div class="reason-copy reveal">
+        <p class="eyebrow"><span></span>Reasons that you're special</p>
+        <h2>Why I’m so lucky<br><em>to have you.</em></h2>
+        <button class="secondary-button" id="nextReason" type="button">Show me another reason <span>→</span></button>
+        <div class="reason-dots" id="reasonDots" aria-label="Reason progress"></div>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="letter-heading reveal">
+        <p class="eyebrow"><span></span> One last thing</p>
+        <h2>A letter for my<br><em>baby.</em></h2>
+      </div>
+      <div class="envelope-wrap reveal">
+        <button class="envelope" id="openLetter" type="button" aria-expanded="false" aria-controls="loveLetter">
+          <span class="envelope-back"></span>
+          <span class="letter-preview">Tap to open me</span>
+          <span class="envelope-front"></span>
+          <span class="envelope-flap"></span>
+          <span class="wax-seal">♥</span>
+        </button>
+        <article class="love-letter" id="loveLetter" aria-hidden="true">
+          <button class="close-letter" id="closeLetter" type="button" aria-label="Close letter">×</button>
+          <p class="letter-date" data-birthday-label>Your special day</p>
+          <h3>My dear <span data-girlfriend-name>Baby</span>,</h3>
+          <p>Happy 20th birthday to the person who makes my world brighter, softer, and so much fun. I’m grateful for every moments natin just by being together, every tawanan, tampuhan, harutan natin dalawa, those ordinary moment that became special kasi nakakasama kita in those memories.</p>
+          <p>Wish ko lang for your birthday is, i hope na maging maayos and maganda ang magiging araw mo in this upcoming years and i also hope na tuloy tuloy lang tayo hanggang dulo kahit ano man ang mangyari. Even though busy tayo pareho, nakakahanap tayo way para magkasama sa bawat araw na lumilipas, and i'm so happy for that. I'm always here for you and for us baby, and for that, you deserve beautiful surprises, big dreams, and a love that always feels like home.</p>
+          <p>Today, We celebrate every wonderful thing that makes you <em>you</em>. I love you so so much baby and happy 20th birthdayy!!.</p>
+          <p class="signature"><br><strong data-from-name>Your boyfriend</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="finale">
+      <div class="finale-inner reveal">
+        <span class="finale-icon">✦</span>
+        <p>Before you go...</p>
+        <h2>Close your eyes.<br>Make a birthday wish.</h2>
+        <button class="wish-button" id="wishButton" type="button">Done</button>
+        <small>May every lovely thing you wish for comes true.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with <span>♥</span> for <strong data-girlfriend-name>My Baby</strong></p>
+    <a href="#home">Back to the top ↑</a>
+  </footer>
+
+  <div class="surprise-modal" id="surpriseModal" role="dialog" aria-modal="true" aria-labelledby="surpriseTitle" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close surprise">×</button>
+      <span class="modal-sparkle">✦</span>
+      <p>A tiny reminder</p>
+      <h2 id="surpriseTitle">I love you so so much</h2>
+      <div class="modal-hearts" aria-hidden="true">♥ ♥ ♥</div>
+      <p class="modal-copy">Happy 20th birthday, <span data-girlfriend-name>My Baby</span>, Sobrang happy ko dahil cinelebrate natin ulit together yung special day mo.</p>
+      <button class="primary-button" id="modalConfetti" type="button">Click me!</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
